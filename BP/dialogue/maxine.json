@@ -1,0 +1,37 @@
+{
+	"format_version": "1.14",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "maxine1",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.maxine.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.maxine.1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.a" } ] },
+						"commands": [
+							"/execute @a ~ ~ ~ playsound random.levelup @a ~ ~ ~","/tp @e[tag=maxine] 25 73 23","/scoreboard players add @p protest 1"
+						]
+					},
+                    {
+						"name": { "rawtext": [ { "translate": "dialogue.button.b" } ] },
+						"commands": [
+							"/dialogue open @e[tag=maxine] @a maxine1","/execute @a ~ ~ ~ playsound beacon.deactivate @a ~ ~ ~"
+						]
+					},
+                    {
+						"name": { "rawtext": [ { "translate": "dialogue.button.c" } ] },
+						"commands": [
+							"/dialogue open @e[tag=maxine] @a maxine1","/execute @a ~ ~ ~ playsound beacon.deactivate @a ~ ~ ~"
+						]
+					}
+				],
+				"on_close_commands": [
+				]
+			}
+		]
+		
+	}
+}

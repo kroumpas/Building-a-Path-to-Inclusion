@@ -1,0 +1,18 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Resource Pack containing the texts and textures relevant to the Building a Path to Inclusion .mcworld file for the Hack 4.0 Ukraine Hackathon. This is the first draft and not the finalised version",
+        "name": "Building a Path to Inclusion RP",
+        "uuid": "9c997557-e758-4a47-93d8-02bda248a5d0",
+        "version": [0, 0, 1],
+        "min_engine_version": [ 1, 14, 70 ]
+    },
+    "modules": [
+        {
+            "description": "Resource Pack containing the texts and textures relevant to the Building a Path to Inclusion .mcworld file for the Hack 4.0 Ukraine Hackathon. This is the first draft and not the finalised version",
+            "type": "resources",
+            "uuid": "34dd2c08-5c37-4c28-b481-fb578df296de",
+            "version": [0, 0, 1]
+        }
+    ]
+}

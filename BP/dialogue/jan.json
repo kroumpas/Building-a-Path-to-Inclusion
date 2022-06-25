@@ -1,0 +1,101 @@
+{
+	"format_version": "1.14",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "jan1",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.jan.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.jan.1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.help" } ] },
+						"commands": [
+							"/scoreboard players set @p jan 2","/tp @e[tag=jan] 55 73 -16"
+						]
+					}
+				],
+				"on_close_commands": [
+					"/execute @a ~ ~ ~ function dialogue_change"
+				]
+			},
+			{
+				"scene_tag": "jan2",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.jan.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.jan.2", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.next" } ] },
+						"commands": [
+							"/scoreboard players set @p jan 3","/dialogue open @e[tag=npc1] @a npc12"
+						]
+					}
+				],
+				"on_close_commands": [
+					"/execute @a ~ ~ ~ function dialogue_change"
+				]
+			},
+			{
+				"scene_tag": "jan3",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.jan.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.jan.3", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.close" } ] },
+						"commands": [
+							"/scoreboard players set @p jan 4","/tp @e[tag=jan] 62 73 -16"
+						]
+					}
+				],
+				"on_close_commands": [
+					"/execute @a ~ ~ ~ function dialogue_change"
+				]
+			},
+			{
+				"scene_tag": "jan4",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.jan.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.jan.4", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.a" } ] },
+						"commands": [
+							"/execute @a ~ ~ ~ playsound beacon.deactivate @a ~ ~ ~","/dialogue open @e[tag=jan] @a jan4"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.b" } ] },
+						"commands": [
+							"/execute @a ~ ~ ~ playsound beacon.deactivate @a ~ ~ ~","/dialogue open @e[tag=jan] @a jan4"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.c" } ] },
+						"commands": [
+							"/scoreboard players set @p jan 5","/dialogue open @e[tag=jan] @a jan5"
+						]
+					}
+				],
+				"on_close_commands": [
+					"/execute @a ~ ~ ~ function dialogue_change"
+				]
+			},
+			{
+				"scene_tag": "jan5",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.jan.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.jan.5", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.close" } ] },
+						"commands": [
+							"/tp @p 36 89 35","/scoreboard players add @p count 1"
+						]
+					}
+				],
+				"on_close_commands": [
+				]
+			}
+		]
+		
+	}
+}

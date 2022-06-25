@@ -1,0 +1,120 @@
+### ATERMON B.V. Product
+### Hack 4.0 Ukraine - Building a Path to Inclusion
+### This file contains the text that will appear to the game interface once the corresponding language is selected. [en_US -> English (United States), el_GR -> Greek, etc]
+### There may be phrases in Ukrainian and in other languages. For the correct pronounciation by the Immersive Reader you must select the correct language by the game settings first.
+### For questions please contact Konstantinos: k.roumpas@atermon.nl
+### Do you think you can translate it to your native language? Feel free to help us out!
+
+## Intro
+dialogue.intro.name=Guide
+dialogue.intro.1=Hello hero! There is an emergency! Ukrainians have been forced to leave their homes, due to war. Fortunately, we are here to help them. You can choose if you want to play as a refugee, in order to learn useful information about the new language you will have to learn, about international law, etc. Or you can play as a citizen in a receiving country, so that you can help make that transition easier, and also help combat the problems of misinformation in the media. 
+dialogue.intro.2=That’s great. We will immediately begin with your first task. Don’t worry. You can play as a receiving citizen later on. 
+dialogue.intro.3=That’s great. Your task now is to break down the five pillars that prevent refugees from feeling welcome and getting incorporated in our country. 
+dialogue.intro.4=Go ahead and choose which one of these topics you want to combat first. Don’t worry. You can play as a refugee later on. 
+dialogue.intro.5=Sorry, this challenge isn’t available for the DEMO version 
+dialogue.intro.6=Which challenge do you want to take on next? 
+dialogue.intro.7=Looks like you’ve completed the challenges from the receiving side. 
+dialogue.intro.8=Looks like you’ve completed the challenges from the refugee side. 
+dialogue.intro.9=Looks like you've already completed that challenge.
+
+## Refugee POV
+# Teacher
+dialogue.teacher.name=Teacher
+dialogue.teacher.1=Hello! Welcome to school. I realise there is a language barrier, that’s why I thought it would be fun to create these little boards with useful phrases. You can use the immersive reader functionality in order to listen to the pronunciation and try to pronounce them yourself! You can also change the language in the game settings and try out different languages! Let me know when you are done. 
+dialogue.teacher.2=Are you done already? Alright then, let’s move on. 
+dialogue.teacher.3=Take this portfolio and camera. And use the blocks in the chest in order to create a small monument celebrating your country. It is important that you don’t lose your sense of self and realise it is acceptable to pay respect to the heritage of your birthplace. Let me know when you are done. 
+diaolgue.teacher.4=Are you done already? Make sure you’ve taken photos. 
+dialogue.teacher.5=OK, I will wait here. 
+dialogue.teacher.6=Alright! Let’s go back, then. 
+# Boards | The "NATIVE" text is the text that the player already knows how to read. The "FOREGIN" text is the text in the language they want it translated.
+board.native.1=Привіт! Мене звати
+board.foreing.1=Hallo! My name is 
+board.native.2=Ви знаєте, де знаходиться аптека?
+board.foreing.2=Do you know where the pharmacy is?
+board.native.3=Чи можете ви це повторити, будь ласка?
+board.foreing.3=Can you repeat that, please?
+
+## Inclusion
+# Secretary
+dialogue.secretary.name=Secretary
+dialogue.secretary.1=Hello, the Mayor is very busy at the moment and won’t be able to see anyone......unless you can help us?
+dialogue.secretary.2=That’s great to hear, I’m sure the Mayor will be thrilled. Give me a moment to open the door.
+# Mayor
+dialogue.mayor.name=Mayor
+dialogue.mayor.1=Hi, please leave my office, I am very busy!
+dialogue.mayor.2=Oh! Is that right? Well then, welcome to the town-hall, I am the Mayor and we are in big trouble! You see, we must make some preparations because we will be welcoming some refugees soon but we are behind schedule!
+dialogue.mayor.3=Since you will be helping me, I want you to visit the underground bunker and fetch a book for me. Watch out, to reach the bunker room, you will first have to go through a maze. The entrance is located inside the town-hall, I opened the door for you. When you’re done, place the book inside this chest next to me, in the top left corner.
+dialogue.mayor.4=Oh you’re finished already? That’s great, I knew I could count on you! The book you brought me contains all the necessary information in order to process any refugees that may come in our town. You see, a refugee goes through three phases in total which are Premigration, Migration and Postmigration.
+dialogue.mayor.5=The Premigration phase is when bad things start to happen which forces people out of a country. The migration itself is the process of moving out of the country you resided in. This phase is really tiring and it is very difficult for the refugees. 
+dialogue.mayor.6=The last phase which is Postmigration involves the processing of the refugees and then the resettlement in a new country. While the last phase brings some peace of mind to the refugees, new challenges quickly arise that sometimes have to do with the host country. Therefore, I will need your help again in order to make them feel at home when they get here.
+dialogue.mayor.7=Thank you again. As I said, the postmigration phase is difficult as well and there is a protest going on. Can you go there and talk to everyone involved to change their mind? I know that you can make it. The protest is right outside the town-hall.
+dialogue.mayor.8=All your help is greatly appreciated! Thank you for talking to everyone in the protest about inclusion. I believe that ghastly pillar over there is about to fall! That should be a sight to see! Cheers 
+# Barbara
+dialogue.barbara.name=Barbara
+dialogue.barbara.1=We can’t sustain any more people in our town! We will starve! %1%1 A) There is no food left, we will starve %1%1 B) We must include the refugees in our community and work alongside, what do you say? %1%1 C) Quick buy all the food
+# Maxine
+dialogue.maxine.name=Maxine
+dialogue.maxine.1=I am afraid of these foreign people. %1%1 A) We shouldn’t discriminate someone just because they speak a different language than us. Do you agree? %1%1 B) I don’t agree %1%1 C) You are also foreign to them.
+# Mike
+dialogue.mike.name=Mike
+dialogue.mike.1=These people are all rich and benefit from the state. %1%1 A) The state gives them too much money %1%1 B) Perhaps they can pay off our loans %1%1 C) These people also lost their homes, don’t you think we should offer them help in these difficult times? 
+# Dustin
+dialogue.dustin.name=Dustin
+dialogue.dustin.1=I am afraid that they carry diseases, I can’t get sick! %1%1 A) That is why equal access to healthcare is important, we should get them all the help they need for their physical and mental health, don’t you agree? %1%1 B) We should close down our hospitals  %1%1 C) I am sure they don’t require any special treatment whatsoever when it comes to their health 
+
+## Boarding Challenge
+# GUIDE NPC
+dialogue.guide.name=Guide
+dialogue.guide.1=Hallo! Are you here to help with the settlement of the refugees? 
+dialogue.guide.2=These people had to leave everything behind. Despite every other challenge they are facing right now, having a roof above your head is a top priority. 
+dialogue.guide.3=The government had reserved these little houses for this scenario. Most countries involve boarding for refugees on their annual budget. So, in a way, people are already contributing to aid the refugees. 
+dialogue.guide.4=I want you to equip each house with the essentials. Make sure you make it look nice! Here, take this camera and portfolio so that you can export your images and share them with the world. 
+dialogue.guide.5=Outside each house you will find a chest containing everything you will need to fill the house with. When you are done, come see me! 
+dialogue.guide.6=Are you done? 
+dialogue.guide.7=OK let me know when you’ll be done 
+dialogue.guide.8=Having a roof over your head is very important. But, it’s not the only thing we can do. Reach out to your local authorities to see how you can help with refugees! 
+dialogue.guide.9=You can now go back and try out a different challenge 
+# Flavour text NPC
+dialogue.flavor1.name=Tony
+dialogue.flavor2.name=Steve
+dialogue.flavor3.name=Chris
+dialogue.flavour1.1=Governments have a responsibility to provide on-arrival settlement support to people from refugee backgrounds in areas such as housing, health and education 
+dialogue.flavour2.1=Young people face particular challenges because of their age and experiences. They carry the scars of war and displacement with them. Sometimes children are forced to flee alone and arrive in Europe as unaccompanied minors. 
+dialogue.flavour3.1=Although children are very resilient some children experience physical and psychological effects of trauma, language and literacy difficulties due to disrupted or limited prior education, issues with identity and belonging, changing family responsibilities. 
+
+## MEDIA
+# Jan
+dialogue.jan.name=Jan
+dialogue.jan.1=I am very disappointed. I only started working in this town market two days ago and I am already tired of hearing all these lies and fake news about the war in Ukraine from passer-by people. I have family in Ukraine, and I know that the things aren’t the way the media and everyone claims. I am trying to convince them that we shouldn’t believe whatever we hear, but they just ignore me. Can you help me? 
+dialogue.jan.2=What kind of criminality are you referring to? Pickpocketing? Robberies? And what do you mean by double as high? Can I see the numbers and statistics of the past months? 
+dialogue.jan.3=So, you choose to believe an article about something vague that neither refers to a trustworthy source, nor mentions exact numbers or provides further explanation about the statement? I believe you need to be more suspicious about what you read and always double check before sharing the information.
+dialogue.jan.4=What should I say in this situation? %1%1 A. Oh, no that’s so harsh and brutal. They should be ashamed for doing this! I feel so sorry about the poor Ukrainian kids.  %1%1 B. That’s a lie. There’s no way this has happened, and I am a thousand percent sure about it. End of discussion, please.  %1%1 C. Wow, that seems unbelievable, I wonder if it is true indeed. I will have to double check with some Ukrainian resources I usually consult that keep updating during the war. 
+dialogue.jan.5=Thank you for helping me. It is important that we don’t blame the war victims for the war. It is something that impacts all of us. You can now go back and finish your challenges. 
+# NPC 1
+dialogue.npc1.name=Billy
+dialogue.npc1.1=Did you know that criminality in Ukraine is double as high as it is here? This means that now that refugees will come to our country, we will all be in great danger!
+dialogue.npc1.2=Hmm. I don’t know, just criminality. It’s here on the newspaper, look! I don’t see any numbers, though.
+# NPC 2
+dialogue.npc2.name=Mandy
+dialogue.npc2.1=I just received an unbelievable notification on my phone, these Ukrainian soldiers are something else, they have started recruiting kids under 16 to fight the war! Can you believe it? That’s crazy.
+
+## Buttons
+dialogue.button.yes=Yes
+dialogue.button.no=No
+dialogue.button.next=Next
+dialogue.button.close=Close
+dialogue.button.ok=OK!
+dialogue.button.illhelp=I'll help
+dialogue.button.illhelpu=I'll help you
+dialogue.button.help=Help
+dialogue.button.a=[A]
+dialogue.button.b=[B]
+dialogue.button.c=[C]
+dialogue.button.language=Language
+dialogue.button.boarding=Boarding
+dialogue.button.media=Media
+dialogue.button.culture=Culture
+dialogue.button.inclusion=Inclusion
+dialogue.button.refugee=Refugee
+dialogue.button.recieve=Local
+dialogue.button.sure=Sure

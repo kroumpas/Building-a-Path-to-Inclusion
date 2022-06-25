@@ -1,0 +1,37 @@
+{
+	"format_version": "1.14",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "mike1",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.mike.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.mike.1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.a" } ] },
+						"commands": [
+							"/dialogue open @e[tag=mike] @a mike1","/execute @a ~ ~ ~ playsound beacon.deactivate @a ~ ~ ~"
+						]
+					},
+                    {
+						"name": { "rawtext": [ { "translate": "dialogue.button.b" } ] },
+						"commands": [
+							"/dialogue open @e[tag=mike] @a mike1","/execute @a ~ ~ ~ playsound beacon.deactivate @a ~ ~ ~"
+						]
+					},
+                    {
+						"name": { "rawtext": [ { "translate": "dialogue.button.c" } ] },
+						"commands": [
+							"/execute @a ~ ~ ~ playsound random.levelup @a ~ ~ ~","/tp @e[tag=mike] 25 73 23","/scoreboard players add @p protest 1"
+						]
+					}
+				],
+				"on_close_commands": [
+				]
+			}
+		]
+		
+	}
+}

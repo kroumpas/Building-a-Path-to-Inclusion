@@ -1,0 +1,24 @@
+{
+	"format_version": "1.14",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "flavor11",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.flavor1.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.flavor1.1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.close" } ] },
+						"commands": [
+						]
+					}
+				],
+				"on_close_commands": [
+				]
+			}
+		]
+		
+	}
+}

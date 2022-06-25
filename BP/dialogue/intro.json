@@ -1,0 +1,201 @@
+{
+	"format_version": "1.14",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "intro1",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.intro.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.intro.1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.refugee" } ] },
+						"commands": [
+							"/dialogue open @e[tag=intro] @a intro2"
+						]
+					},
+                    {
+						"name": { "rawtext": [ { "translate": "dialogue.button.recieve" } ] },
+						"commands": [
+							"/dialogue open @e[tag=intro] @a intro3","/dialogue open @e[tag=intro] @a[scores={count=3}] intro9"
+						]
+					}
+				],
+				"on_close_commands": [
+				]
+			},
+			{
+				"scene_tag": "intro2",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.intro.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.intro.2", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.close" } ] },
+						"commands": [
+							"/tp @p -29 73 42"
+						]
+					}
+				],
+				"on_close_commands": [
+				]
+			},
+			{
+				"scene_tag": "intro3",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.intro.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.intro.3", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.next" } ] },
+						"commands": [
+							"/dialogue open @e[tag=intro] @a intro4"
+						]
+					}
+				],
+				"on_close_commands": [
+					"/execute @a ~ ~ ~ function dialogue_change"
+				]
+			},
+			{
+				"scene_tag": "intro4",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.intro.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.intro.4", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.language" } ] },
+						"commands": [
+							"/dialogue open @e[tag=intro] @a intro5"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.boarding" } ] },
+						"commands": [
+							"/tp @p -104 73 77","/dialogue open @e[tag=intro] @a[scores={guide=3}] intro8"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.media" } ] },
+						"commands": [
+							"/tp @p 45 73 -8","/dialogue open @e[tag=intro] @a[scores={jan=5}] intro8"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.culture" } ] },
+						"commands": [
+							"/dialogue open @e[tag=intro] @a intro5"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.inclusion" } ] },
+						"commands": [
+							"/tp @p 15 73 17","/dialogue open @e[tag=intro] @a[scores={mayor=8}] intro8"
+						]
+					}
+				],
+				"on_close_commands": [
+					"/execute @a ~ ~ ~ function dialogue_change"
+				]
+			},
+			{
+				"scene_tag": "intro6",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.intro.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.intro.6", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.language" } ] },
+						"commands": [
+							"/dialogue open @e[tag=intro] @a intro5"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.boarding" } ] },
+						"commands": [
+							"/tp @p -91 73 72"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.media" } ] },
+						"commands": [
+							"/tp @p 45 73 -8"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.culture" } ] },
+						"commands": [
+							"/dialogue open @e[tag=intro] @a intro5"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.inclusion" } ] },
+						"commands": [
+							"/tp @p 15 73 17"
+						]
+					}
+				],
+				"on_close_commands": [
+				]
+			},
+			{
+				"scene_tag": "intro7",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.intro.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.intro.7", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.close" } ] },
+						"commands": [
+							"/function allreset"
+						]
+					}
+				],
+				"on_close_commands": [
+				]
+			},
+			{
+				"scene_tag": "intro8",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.intro.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.intro.8", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.close" } ] },
+						"commands": [
+							"/function allreset"
+						]
+					}
+				],
+				"on_close_commands": [
+				]
+			},
+			{
+				"scene_tag": "intro5",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.intro.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.intro.5", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.ok" } ] },
+						"commands": [
+							"/dialogue open @e[tag=intro] @a intro4"
+						]
+					}
+				],
+				"on_close_commands": [
+				]
+			},
+			{
+				"scene_tag": "intro9",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.intro.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.intro.9", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.close" } ] },
+						"commands": [
+							"/dialogue open @e[tag=intro] @a intro1"
+						]
+					}
+				],
+				"on_close_commands": [
+				]
+			}
+		]
+		
+	}
+}

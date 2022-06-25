@@ -1,0 +1,110 @@
+{
+	"format_version": "1.14",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "teacher1",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.teacher.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.teacher.1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.ok" } ] },
+						"commands": [
+							"/scoreboard players set @p teacher 2"
+						]
+					}
+				],
+				"on_close_commands": [
+					"/execute @a ~ ~ ~ function dialogue_change"
+				]
+			},
+			{
+				"scene_tag": "teacher2",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.teacher.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.teacher.2", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.next" } ] },
+						"commands": [
+							"/dialogue open @e[tag=teacher] @a teacher3"
+						]
+					}
+				],
+				"on_close_commands": [
+					"/execute @a ~ ~ ~ function dialogue_change"
+				]
+			},
+			{
+				"scene_tag": "teacher3",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.teacher.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.teacher.3", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.next" } ] },
+						"commands": [
+							"/give @p camera","/give @p portfolio","/scoreboard players set @p teacher 3","/tp @e[tag=teacher] -34 73 49"
+						]
+					}
+				],
+				"on_close_commands": [
+					"/execute @a ~ ~ ~ function dialogue_change"
+				]
+			},
+			{
+				"scene_tag": "teacher4",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.teacher.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.teacher.4", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.yes" } ] },
+						"commands": [
+							"/dialogue open @e[tag=teacher] @a teacher6"
+						]
+					},
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.no" } ] },
+						"commands": [
+							"/dialogue open @e[tag=teacher] @a teacher5"
+						]
+					}
+				],
+				"on_close_commands": [
+					"/execute @a ~ ~ ~ function dialogue_change"
+				]
+			},
+			{
+				"scene_tag": "teacher5",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.teacher.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.teacher.5", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.ok" } ] },
+						"commands": [
+						]
+					}
+				],
+				"on_close_commands": [
+					"/execute @a ~ ~ ~ function dialogue_change"
+				]
+			},
+			{
+				"scene_tag": "teacher6",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.teacher.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.teacher.6", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.ok" } ] },
+						"commands": [
+                            "/tp @p 36 89 35"
+						]
+					}
+				],
+				"on_close_commands": [
+				]
+			}
+		]
+		
+	}
+}

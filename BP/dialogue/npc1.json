@@ -1,0 +1,40 @@
+{
+	"format_version": "1.14",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "npc11",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.npc1.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.npc1.1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.next" } ] },
+						"commands": [
+                            "/dialogue open @e[tag=jan] @a jan2"
+						]
+					}
+				],
+				"on_close_commands": [
+				]
+			},
+            {
+				"scene_tag": "npc12",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.npc1.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.npc1.2", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.next" } ] },
+						"commands": [
+                            "/dialogue open @e[tag=jan] @a jan3"
+						]
+					}
+				],
+				"on_close_commands": [
+				]
+			}
+		]
+		
+	}
+}

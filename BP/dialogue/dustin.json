@@ -1,0 +1,37 @@
+{
+	"format_version": "1.14",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "dustin1",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.dustin.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.dustin.1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.a" } ] },
+						"commands": [
+							"/execute @a ~ ~ ~ playsound random.levelup @a ~ ~ ~","/tp @e[tag=dustin] 25 73 23","/scoreboard players add @p protest 1"
+						]
+					},
+                    {
+						"name": { "rawtext": [ { "translate": "dialogue.button.b" } ] },
+						"commands": [
+							"/dialogue open @e[tag=dustin] @a dustin1","/execute @a ~ ~ ~ playsound beacon.deactivate @a ~ ~ ~"
+						]
+					},
+                    {
+						"name": { "rawtext": [ { "translate": "dialogue.button.c" } ] },
+						"commands": [
+							"/dialogue open @e[tag=dustin] @a dustin1","/execute @a ~ ~ ~ playsound beacon.deactivate @a ~ ~ ~"
+						]
+					}
+				],
+				"on_close_commands": [
+				]
+			}
+		]
+		
+	}
+}

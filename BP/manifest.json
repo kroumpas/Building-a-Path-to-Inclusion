@@ -1,0 +1,24 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Behavior Pack containing the dialogues and functions relevant to the Building a Path to Inclusion .mcworld file for the Hack 4.0 Ukraine Hackathon. This is the first draft and not the finalised version",
+        "name": "Building a Path to Inclusion BP",
+        "uuid": "91c40b4d-eab0-4be8-b49e-311dbf6d359a",
+        "version": [ 0, 0, 1 ],
+        "min_engine_version": [ 1, 14, 70 ]
+    },
+    "modules": [
+        {
+            "description": "Behavior Pack containing the dialogues and functions relevant to the Building a Path to Inclusion .mcworld file for the Hack 4.0 Ukraine Hackathon. This is the first draft and not the finalised version",
+            "type": "data",
+            "uuid": "0c38676c-d5a0-48f7-9f80-17984d0622d4",
+            "version": [0, 0, 1]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "77e0f0dd-1789-4cf4-ae71-3efc36c59121",
+            "version": [0, 0, 1]
+        }
+    ]
+}

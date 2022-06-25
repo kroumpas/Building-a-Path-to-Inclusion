@@ -1,0 +1,132 @@
+{
+	"format_version": "1.14",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "mayor1",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.mayor.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.mayor.1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.illhelpu" } ] },
+						"commands": [
+							"/dialogue open @e[tag=mayor] @a mayor2"
+						]
+					}
+				],
+				"on_close_commands": [
+				]
+			},
+			{
+				"scene_tag": "mayor2",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.mayor.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.mayor.2", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.next" } ] },
+						"commands": [
+							"/dialogue open @e[tag=mayor] @a mayor3"
+						]
+					}
+				],
+				"on_close_commands": [
+				]
+			},
+			{
+				"scene_tag": "mayor3",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.mayor.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.mayor.3", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.ok" } ] },
+						"commands": [
+							"/scoreboard players set @p mayor 3","/setblock 23 72 18 redstone_block"
+						]
+					}
+				],
+				"on_close_commands": [
+					"/execute @a ~ ~ ~ function dialogue_change"
+				]
+			},
+			{
+				"scene_tag": "mayor4",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.mayor.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.mayor.4", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.next" } ] },
+						"commands": [
+							"/dialogue open @e[tag=mayor] @a mayor5"
+						]
+					}
+				],
+				"on_close_commands": [
+					"/execute @a ~ ~ ~ function dialogue_change"
+				]
+			},
+			{
+				"scene_tag": "mayor5",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.mayor.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.mayor.5", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.next" } ] },
+						"commands": [
+                            "/dialogue open @e[tag=mayor] @a mayor6"
+						]
+					}
+				],
+				"on_close_commands": [
+				]
+			},
+			{
+				"scene_tag": "mayor6",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.mayor.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.mayor.6", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.sure" } ] },
+						"commands": [
+                            "/dialogue open @e[tag=mayor] @a mayor7"
+						]
+					}
+				],
+				"on_close_commands": [
+				]
+			},
+			{
+				"scene_tag": "mayor7",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.mayor.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.mayor.7", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.close" } ] },
+						"commands": [
+                            "/scoreboard players set @p mayor 7","/fill 10 73 17 10 74 15 air"
+						]
+					}
+				],
+				"on_close_commands": [
+				]
+			},
+			{
+				"scene_tag": "mayor8",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.mayor.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.mayor.8", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.close" } ] },
+						"commands": [
+                            "/tp @p 36 89 35","/scoreboard players add @p count 1"
+						]
+					}
+				],
+				"on_close_commands": [
+				]
+			}
+		]
+		
+	}
+}

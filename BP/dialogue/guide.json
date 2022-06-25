@@ -1,0 +1,159 @@
+{
+	"format_version": "1.14",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "guide1",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.guide.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.guide.1", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.yes" } ] },
+						"commands": [
+							"/dialogue open @e[tag=guide] @a guide2"
+						]
+					}
+				],
+				"on_close_commands": [
+					"/execute @a ~ ~ ~ function dialogue_change"
+				]
+			},
+			{
+				"scene_tag": "guide2",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.guide.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.guide.2", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.next" } ] },
+						"commands": [
+							"/dialogue open @e[tag=guide] @a guide3"
+						]
+					}
+				],
+				"on_close_commands": [
+					"/execute @a ~ ~ ~ function dialogue_change"
+				]
+			},
+			{
+				"scene_tag": "guide3",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.guide.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.guide.3", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.next" } ] },
+						"commands": [
+							"/dialogue open @e[tag=guide] @a guide4"
+						]
+					}
+				],
+				"on_close_commands": [
+					"/execute @a ~ ~ ~ function dialogue_change"
+				]
+			},
+			{
+				"scene_tag": "guide4",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.guide.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.guide.4", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.next" } ] },
+						"commands": [
+							"/dialogue open @e[tag=guide] @a guide5"
+						]
+					}
+				],
+				"on_close_commands": [
+					"/execute @a ~ ~ ~ function dialogue_change"
+				]
+			},
+			{
+				"scene_tag": "guide5",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.guide.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.guide.5", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.ok" } ] },
+						"commands": [
+                            "/scoreboard players set @p guide 2"
+						]
+					}
+				],
+				"on_close_commands": [
+					"/execute @a ~ ~ ~ function dialogue_change"
+				]
+			},
+			{
+				"scene_tag": "guide6",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.guide.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.guide.6", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.yes" } ] },
+						"commands": [
+                            "/dialogue open @e[tag=guide] @a guide8"
+						]
+					},
+                    {
+						"name": { "rawtext": [ { "translate": "dialogue.button.no" } ] },
+						"commands": [
+                            "/dialogue open @e[tag=guide] @a guide7"
+						]
+					}
+				],
+				"on_close_commands": [
+					"/execute @a ~ ~ ~ function dialogue_change"
+				]
+			},
+			{
+				"scene_tag": "guide7",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.guide.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.guide.7", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.close" } ] },
+						"commands": [
+						]
+					}
+				],
+				"on_close_commands": [
+					"/execute @a ~ ~ ~ function dialogue_change"
+				]
+			},
+			{
+				"scene_tag": "guide8",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.guide.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.guide.8", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.next" } ] },
+						"commands": [
+                            "/dialogue open @e[tag=guide] @a guide9","/scoreboard players set @p guide 3"
+						]
+					}
+				],
+				"on_close_commands": [
+					"/execute @a ~ ~ ~ function dialogue_change"
+				]
+			},
+			{
+				"scene_tag": "guide9",
+				"npc_name": { "rawtext": [ { "translate": "dialogue.guide.name" } ] },
+				"text": { "rawtext": [ { "translate": "dialogue.guide.9", "with": ["\n"] } ] },
+				"buttons": [
+					{
+						"name": { "rawtext": [ { "translate": "dialogue.button.close" } ] },
+						"commands": [
+                            "/tp @p 36 89 35","/scoreboard players add @p count 1"
+						]
+					}
+				],
+				"on_close_commands": [
+					"/execute @a ~ ~ ~ function dialogue_change"
+				]
+			}
+		]
+		
+	}
+}
