@@ -28,7 +28,6 @@ gamemode s
 setworldspawn 36 89 35
 tp @p 36 89 35
 function allreset
-immutableworld true
 
 clear @p
 ability @p mayfly false
