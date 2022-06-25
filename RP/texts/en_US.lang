@@ -23,7 +23,7 @@ dialogue.teacher.name=Teacher
 dialogue.teacher.1=Hello! Welcome to school. I realise there is a language barrier, that’s why I thought it would be fun to create these little boards with useful phrases. You can use the immersive reader functionality in order to listen to the pronunciation and try to pronounce them yourself! You can also change the language in the game settings and try out different languages! Let me know when you are done. 
 dialogue.teacher.2=Are you done already? Alright then, let’s move on. 
 dialogue.teacher.3=Take this portfolio and camera. And use the blocks in the chest in order to create a small monument celebrating your country. It is important that you don’t lose your sense of self and realise it is acceptable to pay respect to the heritage of your birthplace. Let me know when you are done. 
-diaolgue.teacher.4=Are you done already? Make sure you’ve taken photos. 
+dialogue.teacher.4=Are you done already? Make sure you’ve taken photos. 
 dialogue.teacher.5=OK, I will wait here. 
 dialogue.teacher.6=Alright! Let’s go back, then. 
 # Boards | The "NATIVE" text is the text that the player already knows how to read. The "FOREGIN" text is the text in the language they want it translated.
